@@ -1,0 +1,73 @@
+<nav class="custom-navbar">
+
+  <div class="container navbar-container">
+
+    <a routerLink="/" class="logo">
+      ADN DEV
+    </a>
+
+    <button
+      class="menu-button"
+      (click)="toggleMenu()"
+    >
+      ☰
+    </button>
+
+    <div
+      class="navbar-links"
+      [class.show]="isMenuOpen"
+    >
+
+      <ul class="nav-menu">
+
+        <li>
+          <a routerLink="/">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="/about">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="/projects">
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="/contact">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="social-links">
+
+        <a href="https://github.com/evidenciasponao" target="_blank">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/anderson-montenegro-6498a3231/" target="_blank">
+          LinkedIn
+        </a>
+
+        <a
+          href="https://ko-fi.com/neorave"
+          target="_blank"
+          class="support-btn"
+        >
+          Support
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>

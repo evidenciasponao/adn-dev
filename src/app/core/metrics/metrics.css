@@ -1,0 +1,148 @@
+.metrics-section {
+
+  background: #020617;
+
+  padding: 120px 0;
+
+  color: white;
+}
+
+/* Header */
+
+.section-header {
+
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.section-badge {
+
+  display: inline-block;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+}
+
+.section-header h2 {
+
+  font-size: 3rem;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.section-header p {
+
+  max-width: 650px;
+
+  margin: auto;
+
+  color: #94a3b8;
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+}
+
+/* Grid */
+
+.metrics-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 30px;
+}
+
+/* Card */
+
+.metric-card {
+
+  background: #1e293b;
+
+  border-radius: 24px;
+
+  padding: 2.5rem;
+
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  transition:
+    transform .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
+}
+
+.metric-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 20px 50px rgba(59,130,246,.15);
+}
+
+/* Number */
+
+.metric-card h3 {
+
+  font-size: 3.2rem;
+
+  font-weight: 800;
+
+  color: #60a5fa;
+
+  margin-bottom: 12px;
+}
+
+/* Label */
+
+.metric-card span {
+
+  color: #cbd5e1;
+
+  font-size: 1rem;
+
+  letter-spacing: .5px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .metrics-section {
+
+    padding: 90px 0;
+  }
+
+  .section-header h2 {
+
+    font-size: 2.2rem;
+  }
+
+  .metric-card {
+
+    padding: 2rem;
+  }
+
+  .metric-card h3 {
+
+    font-size: 2.5rem;
+  }
+
+}

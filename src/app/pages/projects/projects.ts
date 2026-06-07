@@ -9,6 +9,22 @@ import { Component } from '@angular/core';
 export class Projects {
 
   projects = [
+{
+  title: 'Apolo Manillas',
+  subtitle: 'E-commerce Landing Page',
+  image: 'projects/apolo-manillas.png',
+  description:
+    'Commercial website developed for a handmade bracelet brand, featuring a product catalog, interactive product details, WhatsApp integration for sales inquiries, responsive design, and deployment on Microsoft Azure with a custom domain and HTTPS.',
+  technologies: [
+    'Angular',
+    'TypeScript',
+    'CSS3',
+    'Azure'
+  ],
+  year: '2026',
+  status: 'Live',
+  url: 'https://www.apolo-manillas.shop'
+},
     {
       title: 'ADN DEV Cloud',
       subtitle: 'Professional Portfolio',

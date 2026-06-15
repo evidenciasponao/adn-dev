@@ -2,15 +2,19 @@
 
   <div class="container navbar-container">
 
-    <a routerLink="/" class="logo">
+    <a routerLink="/" class="logo" (click)="closeMenu()">
       ADN DEV
     </a>
 
     <button
       class="menu-button"
       (click)="toggleMenu()"
+      [class.open]="isMenuOpen"
+      aria-label="Toggle menu"
     >
-      ☰
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </button>
 
     <div
@@ -21,25 +25,42 @@
       <ul class="nav-menu">
 
         <li>
-          <a routerLink="/">
+          <a
+            routerLink="/"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeMenu()"
+          >
             Home
           </a>
         </li>
 
         <li>
-          <a routerLink="/about">
+          <a
+            routerLink="/about"
+            routerLinkActive="active-link"
+            (click)="closeMenu()"
+          >
             About
           </a>
         </li>
 
         <li>
-          <a routerLink="/projects">
+          <a
+            routerLink="/projects"
+            routerLinkActive="active-link"
+            (click)="closeMenu()"
+          >
             Projects
           </a>
         </li>
 
         <li>
-          <a routerLink="/contact">
+          <a
+            routerLink="/contact"
+            routerLinkActive="active-link"
+            (click)="closeMenu()"
+          >
             Contact
           </a>
         </li>
@@ -48,11 +69,11 @@
 
       <div class="social-links">
 
-        <a href="https://github.com/evidenciasponao" target="_blank">
+        <a href="https://github.com/evidenciasponao" target="_blank" (click)="closeMenu()">
           GitHub
         </a>
 
-        <a href="https://www.linkedin.com/in/anderson-montenegro-6498a3231/" target="_blank">
+        <a href="https://www.linkedin.com/in/anderson-montenegro-6498a3231/" target="_blank" (click)="closeMenu()">
           LinkedIn
         </a>
 
@@ -60,6 +81,7 @@
           href="https://ko-fi.com/neorave"
           target="_blank"
           class="support-btn"
+          (click)="closeMenu()"
         >
           Support
         </a>

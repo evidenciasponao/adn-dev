@@ -1,6 +1,7 @@
+/* ← ÚNICO CAMBIO: padding-top de 4rem → 2rem */
 .about-section {
   background: #0f172a;
-  padding: 4rem 0 6rem;
+  padding: 2rem 0 6rem;
   margin-top: 0;
 }
 
@@ -142,7 +143,7 @@
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 3rem 0 5rem;
+    padding: 1.5rem 0 5rem; /* ← también ajustado en mobile */
   }
 
   .about-card {

@@ -1,9 +1,13 @@
 .hero {
-  min-height: 100vh;
   background: #0f172a;
   color: white;
   padding-top: 0;
   margin-top: 0;
+}
+
+/* ← CAMBIO CLAVE: en vez de min-vh-100, padding que baja el contenido justo */
+.hero-row {
+  padding: 4rem 0 5rem;
 }
 
 .hero-badge {
@@ -94,7 +98,7 @@
   color: white;
 }
 
-.hero-card h4 {
+.hero-card h3 {
   color: white;
   font-size: 1.3rem;
   margin-bottom: .25rem;
@@ -145,6 +149,10 @@
   .hero-buttons {
     flex-direction: column;
   }
+
+  .hero-row {
+    padding: 3rem 0 4rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -162,5 +170,9 @@
 
   .hero-stats h4 {
     font-size: 1.4rem;
+  }
+
+  .hero-row {
+    padding: 2.5rem 0 3rem;
   }
 }

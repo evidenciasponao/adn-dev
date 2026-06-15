@@ -2,10 +2,14 @@
   min-height: 100vh;
   background: #0f172a;
   color: white;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .hero-badge {
   background: #2563eb;
+  color: white;
+  font-weight: 600;
   padding: .7rem 1rem;
   border-radius: 30px;
   display: inline-block;
@@ -39,80 +43,97 @@
   border: none;
   padding: 1rem 2rem;
   border-radius: 10px;
-
   background: #2563eb;
   color: white;
-
   font-weight: 700;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn-primary-custom:hover {
+  background: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .35);
 }
 
 .btn-secondary-custom {
   border: 1px solid #475569;
-
   background: transparent;
   color: white;
-
   padding: 1rem 2rem;
   border-radius: 10px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn-secondary-custom:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
 }
 
 .hero-card {
-
   background: #1e293b;
-
   border-radius: 24px;
-
   padding: 3rem;
-
   text-align: center;
-
-  border: 1px solid rgba(255,255,255,.1);
-
-  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  border: 1px solid rgba(255, 255, 255, .1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .3);
 }
 
 .hero-avatar {
-
   width: 140px;
   height: 140px;
-
   border-radius: 50%;
-
-  margin: auto;
-
+  margin: 0 auto 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: linear-gradient(
-    135deg,
-    #2563eb,
-    #60a5fa
-  );
-
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
   font-size: 2rem;
   font-weight: bold;
+  color: white;
+}
 
-  margin-bottom: 1.5rem;
+.hero-card h4 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: .25rem;
+}
+
+.hero-card > p {
+  color: #94a3b8;
+  font-size: .95rem;
+  margin-bottom: 0;
 }
 
 .hero-stats {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .hero-stats h4 {
   font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
   margin: 0;
 }
 
 .hero-stats span {
   color: #94a3b8;
+  font-size: .8rem;
 }
 
 @media (max-width: 992px) {
-
   .hero-title {
     font-size: 2.8rem;
   }
@@ -124,7 +145,22 @@
   .hero-buttons {
     flex-direction: column;
   }
-
 }
 
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
 
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-card {
+    padding: 2rem;
+  }
+
+  .hero-stats h4 {
+    font-size: 1.4rem;
+  }
+}

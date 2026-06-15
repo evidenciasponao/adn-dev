@@ -9,66 +9,92 @@ import { Component } from '@angular/core';
 export class Projects {
 
   projects = [
-{
-  title: 'Apolo Manillas',
-  subtitle: 'E-commerce Landing Page',
-  image: 'projects/apolo-manillas.png',
-  description:
-    'Commercial website developed for a handmade bracelet brand, featuring a product catalog, interactive product details, WhatsApp integration for sales inquiries, responsive design, and deployment on Microsoft Azure with a custom domain and HTTPS.',
-  technologies: [
-    'Angular',
-    'TypeScript',
-    'CSS3',
-    'Azure'
-  ],
-  year: '2026',
-  status: 'Live',
-  url: 'https://www.apolo-manillas.shop'
-},
     {
-      title: 'ADN DEV Cloud',
-      subtitle: 'Professional Portfolio',
-      image: 'projects/adn-dev.png',
+      title: 'Blood FL Shop',
+      subtitle: 'Fullstack E-commerce',
+      image: 'projects/blood-fl.png',
       description:
-        'Personal portfolio developed with Angular, focused on responsive design, modern UI and professional presentation.',
+        'Fullstack e-commerce for BLØØD Death Metal CO. Angular frontend with SSR, REST API in .NET Core, JWT authentication, Azure SQL database, CI/CD with GitHub Actions and custom domain on Azure Static Web Apps.',
       technologies: [
         'Angular',
-        'TypeScript',
-        'Bootstrap'
+        'SSR',
+        '.NET Core',
+        'JWT Auth',
+        'Entity Framework',
+        'Azure SQL',
+        'GitHub Actions',
+        'Azure'
       ],
       year: '2026',
       status: 'Live',
-      url: 'https://www.adn-dev.cloud'
+      url: 'https://www.blood-fl.shop'
+    },
+    {
+      title: 'BloodFl API',
+      subtitle: 'REST API — .NET Core',
+      image: 'projects/bloodfl-api.png',
+      description:
+        'Production REST API built with ASP.NET Core. Handles product management, JWT-based authentication, DTOs, Entity Framework migrations and Azure SQL Server. Deployed on Azure App Service.',
+      technologies: [
+        'ASP.NET Core',
+        'C#',
+        'JWT',
+        'Entity Framework',
+        'Azure SQL',
+        'Azure App Service'
+      ],
+      year: '2026',
+      status: 'Live',
+      url: 'https://www.blood-fl.shop'
+    },
+    {
+      title: 'Apolo Manillas',
+      subtitle: 'E-commerce Landing Page',
+      image: 'projects/apolo-manillas.png',
+      description:
+        'E-commerce for a handmade bracelet brand. Product catalog, interactive modals, WhatsApp sales integration, responsive design and deployment on Azure with custom domain and HTTPS.',
+      technologies: [
+        'Angular',
+        'TypeScript',
+        'CSS3',
+        'Azure'
+      ],
+      year: '2026',
+      status: 'Live',
+      url: 'https://www.apolo-manillas.shop'
     },
     {
       title: 'NeoRave Web',
-      subtitle: 'Music Platform',
+      subtitle: 'Artist Platform',
       image: 'projects/neorave-web.png',
       description:
-        'Official NeoRave website featuring branding, multimedia content and responsive user experience.',
+        'Official platform for NeoRave DJ/Producer. SoundCloud and YouTube integrations, visual art gallery, event dates, Ko-fi support page and full responsive design deployed on Azure.',
       technologies: [
         'Angular',
-        'Responsive Design',
-        'UI/UX'
+        'SoundCloud API',
+        'YouTube API',
+        'Ko-fi',
+        'Azure'
       ],
       year: '2026',
       status: 'Live',
       url: 'https://www.neorave-web.shop'
     },
     {
-      title: 'Blood FL Shop',
-      subtitle: 'Commercial Landing Page',
-      image: 'projects/blood-fl.png',
+      title: 'ADN DEV Cloud',
+      subtitle: 'Professional Portfolio',
+      image: 'projects/adn-dev.png',
       description:
-        'Commercial website focused on digital presence, visual identity and customer engagement.',
+        'Personal portfolio showcasing fullstack projects, technical skills, academic background and professional experience. Built with Angular, responsive design and deployed on Azure with custom domain.',
       technologies: [
         'Angular',
-        'CSS',
-        'Bootstrap'
+        'TypeScript',
+        'Bootstrap',
+        'Azure'
       ],
       year: '2026',
       status: 'Live',
-      url: 'https://www.blood-fl.shop'
+      url: 'https://www.adn-dev.cloud'
     }
   ];
 

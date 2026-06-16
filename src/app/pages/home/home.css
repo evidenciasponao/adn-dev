@@ -3,9 +3,52 @@
   color: white;
   padding-top: 0;
   margin-top: 0;
+  position: relative;
+  overflow: hidden;
 }
 
-/* ← CAMBIO CLAVE: en vez de min-vh-100, padding que baja el contenido justo */
+/* ── FONDO SUTIL ── */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grid de puntos */
+.hero-bg-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(96, 165, 250, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 50%,
+    black 40%,
+    transparent 100%
+  );
+}
+
+/* Glow azul desde el centro */
+.hero-bg-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    rgba(37, 99, 235, 0.12) 0%,
+    transparent 70%
+  );
+}
+
+/* Todo el contenido sobre el fondo */
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── RESTO DEL CSS SIN CAMBIOS ── */
 .hero-row {
   padding: 4rem 0 5rem;
 }
@@ -85,17 +128,15 @@
 }
 
 .hero-avatar {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
   margin: 0 auto 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #2563eb, #60a5fa);
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
+  border: 3px solid rgba(96, 165, 250, 0.3);
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.1);
 }
 
 .hero-card h3 {

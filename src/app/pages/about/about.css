@@ -1,10 +1,50 @@
-/* ← ÚNICO CAMBIO: padding-top de 4rem → 2rem */
 .about-section {
   background: #0f172a;
   padding: 2rem 0 6rem;
   margin-top: 0;
+  position: relative;
+  overflow: hidden;
 }
 
+/* ── FONDO SUTIL ── */
+.about-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-bg-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(96, 165, 250, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 50%,
+    black 40%,
+    transparent 100%
+  );
+}
+
+.about-bg-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    rgba(37, 99, 235, 0.12) 0%,
+    transparent 70%
+  );
+}
+
+.about-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── RESTO SIN CAMBIOS ── */
 .about-card {
   background: #1e293b;
   border-radius: 24px;
@@ -70,19 +110,18 @@
   height: 100%;
 }
 
-.avatar-circle {
-  width: 180px;
-  height: 180px;
+.avatar-photo {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #2563eb, #60a5fa);
-  color: white;
-  font-size: 3rem;
-  font-weight: 800;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
   margin-bottom: 1.5rem;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, .35);
+  border: 3px solid rgba(96, 165, 250, 0.3);
+  box-shadow:
+    0 0 0 6px rgba(37, 99, 235, 0.1),
+    0 10px 30px rgba(37, 99, 235, 0.25);
 }
 
 .about-avatar h4 {
@@ -143,7 +182,7 @@
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 1.5rem 0 5rem; /* ← también ajustado en mobile */
+    padding: 1.5rem 0 5rem;
   }
 
   .about-card {
@@ -158,10 +197,9 @@
     font-size: 1rem;
   }
 
-  .avatar-circle {
-    width: 140px;
-    height: 140px;
-    font-size: 2.3rem;
+  .avatar-photo {
+    width: 160px;
+    height: 160px;
   }
 
   .about-avatar h4 {

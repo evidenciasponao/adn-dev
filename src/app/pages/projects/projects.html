@@ -11,7 +11,10 @@
     <div class="section-header">
       <span class="section-badge">Projects</span>
       <h2>Featured Projects</h2>
-      <p>Real applications designed, developed and deployed using Angular.</p>
+      <p>
+        Real-world applications designed, developed and deployed using
+        Angular, .NET and Azure.
+      </p>
     </div>
 
     <div class="projects-grid">
@@ -22,26 +25,85 @@
 
           <div class="project-image">
             <img [src]="project.image" [alt]="project.title">
-            <span class="project-status">{{ project.status }}</span>
+            <span class="project-status">
+              {{ project.status }}
+            </span>
           </div>
 
           <div class="project-content">
 
-            <span class="project-year">{{ project.year }}</span>
-            <h3>{{ project.title }}</h3>
-            <h5>{{ project.subtitle }}</h5>
-            <p>{{ project.description }}</p>
+            <span class="project-year">
+              {{ project.year }}
+            </span>
 
-            <div class="tech-list">
-              @for(tech of project.technologies; track tech){
-                <span class="tech-badge">{{ tech }}</span>
-              }
+            <h3>
+              {{ project.title }}
+            </h3>
+
+            <h5>
+              {{ project.subtitle }}
+            </h5>
+
+            <!-- PROBLEM -->
+            <div class="project-block">
+
+              <span class="block-title">
+                Problem Solved
+              </span>
+
+              <p class="project-text">
+                {{ project.problem }}
+              </p>
+
             </div>
 
+            <!-- ARCHITECTURE -->
+            <div class="project-block">
+
+              <span class="block-title">
+                Architecture
+              </span>
+
+              <div class="architecture">
+                {{ project.architecture }}
+              </div>
+
+            </div>
+
+            <!-- TECHNOLOGIES -->
+            <div class="tech-list">
+
+              @for(tech of project.technologies; track tech){
+
+                <span class="tech-badge">
+                  {{ tech }}
+                </span>
+
+              }
+
+            </div>
+
+            <!-- ACTIONS -->
             <div class="project-actions">
-              <a [href]="project.url" target="_blank" class="btn-demo">
+
+              <a
+                [href]="project.demoUrl"
+                target="_blank"
+                class="btn-demo">
+
                 Live Demo
+
               </a>
+
+              <a
+                [href]="project.repoUrl"
+                target="_blank"
+                class="btn-repo">
+
+                GitHub
+
+              </a>
+
             </div>
 
           </div>

@@ -9,12 +9,19 @@ import { Component } from '@angular/core';
 export class Projects {
 
   projects = [
+
     {
       title: 'Blood FL Shop',
       subtitle: 'Fullstack E-commerce',
+
       image: 'projects/blood-fl.png',
-      description:
-        'Fullstack e-commerce for BLØØD Death Metal CO. Angular frontend with SSR, REST API in .NET Core, JWT authentication, Azure SQL database, CI/CD with GitHub Actions and custom domain on Azure Static Web Apps.',
+
+      problem:
+        'The band needed a complete online store with secure authentication, inventory management, product catalog and automated cloud deployment.',
+
+      architecture:
+        'Angular SSR → ASP.NET Core API → Azure SQL Database → Azure Static Web Apps',
+
       technologies: [
         'Angular',
         'SSR',
@@ -25,16 +32,28 @@ export class Projects {
         'GitHub Actions',
         'Azure'
       ],
+
       year: '2026',
+
       status: 'Live',
-      url: 'https://www.blood-fl.shop'
+
+      demoUrl: 'https://www.blood-fl.shop',
+
+      repoUrl: 'https://github.com/evidenciasponao/blood-web'
     },
+
     {
       title: 'BloodFl API',
       subtitle: 'REST API — .NET Core',
+
       image: 'projects/bloodfl-api.png',
-      description:
-        'Production REST API built with ASP.NET Core. Handles product management, JWT-based authentication, DTOs, Entity Framework migrations and Azure SQL Server. Deployed on Azure App Service.',
+
+      problem:
+        'A secure backend service was required to handle authentication, product management, order processing and database operations for the e-commerce platform.',
+
+      architecture:
+        'ASP.NET Core → Entity Framework → Azure SQL Server → Azure App Service',
+
       technologies: [
         'ASP.NET Core',
         'C#',
@@ -43,32 +62,56 @@ export class Projects {
         'Azure SQL',
         'Azure App Service'
       ],
+
       year: '2026',
+
       status: 'Live',
-      url: 'https://www.blood-fl.shop'
+
+      demoUrl: 'https://www.blood-fl.shop',
+
+      repoUrl: 'https://github.com/evidenciasponao/bloodfl-api'
     },
+
     {
       title: 'Apolo Manillas',
       subtitle: 'E-commerce Landing Page',
+
       image: 'projects/apolo-manillas.png',
-      description:
-        'E-commerce for a handmade bracelet brand. Product catalog, interactive modals, WhatsApp sales integration, responsive design and deployment on Azure with custom domain and HTTPS.',
+
+      problem:
+        'The client needed an online presence to showcase products, increase sales and facilitate direct communication with customers.',
+
+      architecture:
+        'Angular → Responsive UI → WhatsApp Integration → Azure Hosting',
+
       technologies: [
         'Angular',
         'TypeScript',
         'CSS3',
         'Azure'
       ],
+
       year: '2026',
+
       status: 'Live',
-      url: 'https://www.apolo-manillas.shop'
+
+      demoUrl: 'https://www.apolo-manillas.shop',
+
+      repoUrl: 'https://github.com/evidenciasponao/apolo-manillas'
     },
+
     {
       title: 'NeoRave Web',
       subtitle: 'Artist Platform',
+
       image: 'projects/neorave-web.png',
-      description:
-        'Official platform for NeoRave DJ/Producer. SoundCloud and YouTube integrations, visual art gallery, event dates, Ko-fi support page and full responsive design deployed on Azure.',
+
+      problem:
+        'The artist required a centralized platform to promote music, events, visual content and fan support channels from a single website.',
+
+      architecture:
+        'Angular → SoundCloud API → YouTube API → Azure Hosting',
+
       technologies: [
         'Angular',
         'SoundCloud API',
@@ -76,26 +119,44 @@ export class Projects {
         'Ko-fi',
         'Azure'
       ],
+
       year: '2026',
+
       status: 'Live',
-      url: 'https://www.neorave-web.shop'
+
+      demoUrl: 'https://www.neorave-web.shop',
+
+      repoUrl: 'https://github.com/evidenciasponao/neorave-web'
     },
+
     {
       title: 'ADN DEV Cloud',
       subtitle: 'Professional Portfolio',
+
       image: 'projects/adn-dev.png',
-      description:
-        'Personal portfolio showcasing fullstack projects, technical skills, academic background and professional experience. Built with Angular, responsive design and deployed on Azure with custom domain.',
+
+      problem:
+        'A professional platform was needed to showcase projects, technical skills, cloud experience and software development capabilities.',
+
+      architecture:
+        'Angular → TypeScript → Bootstrap → Azure Static Web Apps',
+
       technologies: [
         'Angular',
         'TypeScript',
         'Bootstrap',
         'Azure'
       ],
+
       year: '2026',
+
       status: 'Live',
-      url: 'https://www.adn-dev.cloud'
+
+      demoUrl: 'https://www.adn-dev.cloud',
+
+      repoUrl: 'https://github.com/evidenciasponao/adn-dev'
     }
+
   ];
 
 }

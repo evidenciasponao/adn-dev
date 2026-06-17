@@ -1,6 +1,7 @@
 # ADN DEV Cloud
 
-![ADN DEV Cloud Banner](assets/banner.png)
+<img width="1873" height="885" alt="image" src="https://github.com/user-attachments/assets/d7017da8-bdf3-4ef6-ba67-cf35132029b9" />
+
 
 > Professional portfolio built with Angular and Azure Cloud to showcase real-world projects, technical skills and fullstack development experience.
 

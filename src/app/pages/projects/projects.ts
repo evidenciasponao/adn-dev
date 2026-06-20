@@ -155,6 +155,36 @@ export class Projects {
       demoUrl: 'https://www.adn-dev.cloud',
 
       repoUrl: 'https://github.com/evidenciasponao/adn-dev'
+    },
+
+    {
+      title: 'ApoloManillas API',
+      subtitle: 'REST API — .NET Core',
+
+      image: 'projects/apolo-manillas-api.png',
+
+      problem:
+        'A secure backend service was required to handle authentication, product management, order processing and database operations for the e-commerce platform.',
+
+      architecture:
+        'ASP.NET Core → Entity Framework → Azure SQL Server → Azure App Service',
+
+      technologies: [
+        'ASP.NET Core',
+        'C#',
+        'JWT',
+        'Entity Framework',
+        'Azure SQL',
+        'Azure App Service'
+      ],
+
+      year: '2026',
+
+      status: 'Live',
+
+      demoUrl: 'https://www.apolo-manillas.shop',
+
+      repoUrl: 'https://github.com/evidenciasponao/apolomanillas-api'
     }
 
   ];

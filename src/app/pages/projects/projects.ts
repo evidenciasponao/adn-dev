@@ -178,7 +178,7 @@ export class Projects {
         'Azure App Service'
       ],
 
-      year: '2026',
+      year: '2025',
 
       status: 'Live',
 

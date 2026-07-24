@@ -174,7 +174,7 @@ export class Projects {
             image: 'projects/neorave-web.png',
 
             problem:
-                'The artist required a centralized platform to promote music, events, visual content and fan support channels from a single website.',
+                'The artist required a centralized platform to promote music, events, visual content and fan support channels from a single website',
 
             architecture:
                 'Angular → SoundCloud API → YouTube API → Azure Hosting',

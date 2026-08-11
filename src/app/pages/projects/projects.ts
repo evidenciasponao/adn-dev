@@ -11,6 +11,40 @@ export class Projects {
     projects = [
 
         {
+            title: 'NeoArchiveAI WEB',
+            subtitle: 'AI Document Management — Frontend',
+
+            image: 'projects/neoarchiveaiweb.png',
+
+            problem:
+                'A modern web interface was required to provide users with a secure and intuitive platform for managing, searching and analyzing documents through AI-powered services.',
+
+            architecture:
+                'Angular → ASP.NET Core Web API → PostgreSQL → Azure Services',
+
+            technologies: [
+                'Angular',
+                'TypeScript',
+                'RxJS',
+                'ASP.NET Core API',
+                'JWT Authentication',
+                'PostgreSQL',
+                'Clean Architecture',
+                'Azure',
+                'Postman',
+                'GitHub Actions'
+            ],
+
+            year: '2026',
+
+            status: 'In Development',
+
+            demoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI',
+
+            repoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI'
+        },
+
+                {
             title: 'NeoArchiveAI',
             subtitle: 'AI Document Management System',
 

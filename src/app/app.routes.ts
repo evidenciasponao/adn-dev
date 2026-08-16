@@ -6,16 +6,27 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/home/home').then(m => m.HomeComponent)
   },
+
   {
     path: 'about',
     loadComponent: () =>
       import('./pages/about/about').then(m => m.About)
   },
+
   {
     path: 'projects',
     loadComponent: () =>
       import('./pages/projects/projects').then(m => m.Projects)
   },
+
+  {
+    path: 'projects/neoarchiveai',
+    loadComponent: () =>
+      import('./pages/projects/neoarchiveai/neoarchiveai').then(
+        m => m.Neoarchiveai
+      )
+  },
+
   {
     path: 'contact',
     loadComponent: () =>

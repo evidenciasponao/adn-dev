@@ -8,41 +8,69 @@
 
   <div class="container">
 
+    <!-- HEADER -->
     <div class="section-header">
-      <span class="section-badge">Projects</span>
-      <h2>Featured Projects</h2>
+
+      <span class="section-badge">
+        Projects
+      </span>
+
+      <h2>
+        Featured Projects
+      </h2>
+
       <p>
         Real-world applications designed, developed and deployed using
         Angular, .NET and Azure.
       </p>
+
     </div>
 
+
+    <!-- PROJECTS GRID -->
     <div class="projects-grid">
 
-      @for(project of projects; track project.title){
+      @for (project of projects; track project.title) {
 
         <div class="project-card">
 
+
+          <!-- IMAGE -->
           <div class="project-image">
-            <img [src]="project.image" [alt]="project.title">
+
+            <img
+              [src]="project.image"
+              [alt]="project.title"
+            >
+
             <span class="project-status">
               {{ project.status }}
             </span>
+
           </div>
 
+
+          <!-- CONTENT -->
           <div class="project-content">
 
+
+            <!-- YEAR -->
             <span class="project-year">
               {{ project.year }}
             </span>
 
+
+            <!-- TITLE -->
             <h3>
               {{ project.title }}
             </h3>
 
+
+            <!-- SUBTITLE -->
             <h5>
               {{ project.subtitle }}
             </h5>
+
 
             <!-- PROBLEM -->
             <div class="project-block">
@@ -57,6 +85,7 @@
 
             </div>
 
+
             <!-- ARCHITECTURE -->
             <div class="project-block">
 
@@ -70,10 +99,11 @@
 
             </div>
 
+
             <!-- TECHNOLOGIES -->
             <div class="tech-list">
 
-              @for(tech of project.technologies; track tech){
+              @for (tech of project.technologies; track tech) {
 
                 <span class="tech-badge">
                   {{ tech }}
@@ -83,28 +113,51 @@
 
             </div>
 
+
             <!-- ACTIONS -->
             <div class="project-actions">
 
-              <a
-                [href]="project.demoUrl"
-                target="_blank"
-                class="btn-demo">
 
-                Live Demo
+              <!-- INTERNAL PROJECT PAGE -->
+              @if (project.detailsUrl) {
 
-              </a>
+                <a
+                  [routerLink]="project.detailsUrl"
+                  class="btn-demo"
+                >
+                  View Project
+                </a>
 
+              }
+
+              <!-- EXTERNAL LIVE DEMO -->
+              @else {
+
+                <a
+                  [href]="project.demoUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-demo"
+                >
+                  Live Demo
+                </a>
+
+              }
+
+
+              <!-- GITHUB -->
               <a
                 [href]="project.repoUrl"
                 target="_blank"
-                class="btn-repo">
-
+                rel="noopener noreferrer"
+                class="btn-repo"
+              >
                 GitHub
-
               </a>
 
+
             </div>
+
 
           </div>
 

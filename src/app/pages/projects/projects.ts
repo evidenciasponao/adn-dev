@@ -1,264 +1,271 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'app-projects',
-    imports: [],
-    templateUrl: './projects.html',
-    styleUrl: './projects.css',
+  selector: 'app-projects',
+  imports: [RouterLink],
+  templateUrl: './projects.html',
+  styleUrl: './projects.css',
 })
 export class Projects {
 
-    projects = [
+  projects = [
 
-        {
-            title: 'NeoArchiveAI WEB',
-            subtitle: 'AI Document Management — Frontend',
+    {
+      title: 'NeoArchiveAI',
+      subtitle: 'Private AI Document Management Platform',
 
-            image: 'projects/neoarchiveaiweb.png',
+      image: 'projects/neoarchiveaiweb.png',
 
-            problem:
-                'A modern web interface was required to provide users with a secure and intuitive platform for managing, searching and analyzing documents through AI-powered services.',
+      problem:
+        'Organizations need to manage sensitive documents securely without necessarily exposing their information to external cloud services. NeoArchiveAI provides a centralized platform designed to operate within a private local network.',
 
-            architecture:
-                'Angular → ASP.NET Core Web API → PostgreSQL → Azure Services',
+      architecture:
+        'Angular → ASP.NET Core Web API → PostgreSQL → Private LAN',
 
-            technologies: [
-                'Angular',
-                'TypeScript',
-                'RxJS',
-                'ASP.NET Core API',
-                'JWT Authentication',
-                'PostgreSQL',
-                'Clean Architecture',
-                'Azure',
-                'Postman',
-                'GitHub Actions'
-            ],
+      technologies: [
+        'Angular',
+        'TypeScript',
+        'RxJS',
+        'ASP.NET Core API',
+        'C#',
+        'JWT Authentication',
+        'PostgreSQL',
+        'Entity Framework Core',
+        'Clean Architecture',
+        'OCR',
+        'LAN',
+        'GitHub Actions'
+      ],
 
-            year: '2026',
+      year: '2026',
 
-            status: 'In Development',
+      status: 'In Development',
 
-            demoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI',
+      detailsUrl: '/projects/neoarchiveai',
 
-            repoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI'
-        },
+      demoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI',
 
-                {
-            title: 'NeoArchiveAI',
-            subtitle: 'AI Document Management System',
+      repoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI'
+    },
 
-            image: 'projects/neoarchiveai.png',
 
-            problem:
-                'Companies often struggle to organize, classify and retrieve documents efficiently. NeoArchiveAI centralizes document management and lays the foundation for AI-powered search, OCR and intelligent document processing.',
+    {
+      title: 'NeoArchiveAI API',
+      subtitle: 'AI Document Management — Backend',
 
-            architecture:
-                'Angular → ASP.NET Core Web API → PostgreSQL → Clean Architecture',
+      image: 'projects/neoarchiveai.png',
 
-            technologies: [
-                'Angular',
-                '.NET',
-                'ASP.NET Core',
-                'C#',
-                'Entity Framework Core',
-                'PostgreSQL',
-                'Clean Architecture',
-                'MediatR',
-                'Swagger',
-                'Docker',
-                'GitHub Actions'
-            ],
+      problem:
+        'Companies often struggle to organize, classify and retrieve documents efficiently. NeoArchiveAI centralizes document management and lays the foundation for AI-powered search, OCR and intelligent document processing.',
 
-            year: '2026',
+      architecture:
+        'ASP.NET Core Web API → PostgreSQL → Clean Architecture',
 
-            status: 'Live',
+      technologies: [
+        'ASP.NET Core',
+        'C#',
+        'Entity Framework Core',
+        'PostgreSQL',
+        'JWT Authentication',
+        'Clean Architecture',
+        'OCR',
+        'Docker',
+        'GitHub Actions'
+      ],
 
-            demoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI',
+      year: '2026',
 
-            repoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI'
-        },
+      status: 'Live',
 
+      demoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI',
 
-        {
-            title: 'Blood FL Shop',
-            subtitle: 'Fullstack E-commerce',
+      repoUrl: 'https://github.com/evidenciasponao/NeoArchiveAI'
+    },
 
-            image: 'projects/blood-fl.png',
 
-            problem:
-                'The band needed a complete online store with secure authentication, inventory management, product catalog and automated cloud deployment.',
+    {
+      title: 'Blood FL Shop',
+      subtitle: 'Fullstack E-commerce',
 
-            architecture:
-                'Angular SSR → ASP.NET Core API → Azure SQL Database → Azure Static Web Apps',
+      image: 'projects/blood-fl.png',
 
-            technologies: [
-                'Angular',
-                'SSR',
-                '.NET Core',
-                'JWT Auth',
-                'Entity Framework',
-                'Azure SQL',
-                'GitHub Actions',
-                'Azure'
-            ],
+      problem:
+        'The band needed a complete online store with secure authentication, inventory management, product catalog and automated cloud deployment.',
 
-            year: '2026',
+      architecture:
+        'Angular SSR → ASP.NET Core API → Azure SQL Database → Azure Static Web Apps',
 
-            status: 'Live',
+      technologies: [
+        'Angular',
+        'SSR',
+        '.NET Core',
+        'JWT Auth',
+        'Entity Framework',
+        'Azure SQL',
+        'GitHub Actions',
+        'Azure'
+      ],
 
-            demoUrl: 'https://www.blood-fl.shop',
+      year: '2026',
 
-            repoUrl: 'https://github.com/evidenciasponao/blood-web'
-        },
+      status: 'Live',
 
-        {
-            title: 'BloodFl API',
-            subtitle: 'REST API — .NET Core',
+      demoUrl: 'https://www.blood-fl.shop',
 
-            image: 'projects/bloodfl-api.png',
+      repoUrl: 'https://github.com/evidenciasponao/blood-web'
+    },
 
-            problem:
-                'A secure backend service was required to handle authentication, product management, order processing and database operations for the e-commerce platform.',
 
-            architecture:
-                'ASP.NET Core → Entity Framework → Azure SQL Server → Azure App Service',
+    {
+      title: 'BloodFl API',
+      subtitle: 'REST API — .NET Core',
 
-            technologies: [
-                'ASP.NET Core',
-                'C#',
-                'JWT',
-                'Entity Framework',
-                'Azure SQL',
-                'Azure App Service'
-            ],
+      image: 'projects/bloodfl-api.png',
 
-            year: '2026',
+      problem:
+        'A secure backend service was required to handle authentication, product management, order processing and database operations for the e-commerce platform.',
 
-            status: 'Live',
+      architecture:
+        'ASP.NET Core → Entity Framework → Azure SQL Server → Azure App Service',
 
-            demoUrl: 'https://www.blood-fl.shop',
+      technologies: [
+        'ASP.NET Core',
+        'C#',
+        'JWT',
+        'Entity Framework',
+        'Azure SQL',
+        'Azure App Service'
+      ],
 
-            repoUrl: 'https://github.com/evidenciasponao/bloodfl-api'
-        },
+      year: '2026',
 
-        {
-            title: 'Apolo Manillas',
-            subtitle: 'E-commerce Landing Page',
+      status: 'Live',
 
-            image: 'projects/apolo-manillas.png',
+      demoUrl: 'https://www.blood-fl.shop',
 
-            problem:
-                'The client needed an online presence to showcase products, increase sales and facilitate direct communication with customers.',
+      repoUrl: 'https://github.com/evidenciasponao/bloodfl-api'
+    },
 
-            architecture:
-                'Angular → Responsive UI → WhatsApp Integration → Azure Hosting',
 
-            technologies: [
-                'Angular',
-                'TypeScript',
-                'CSS3',
-                'Azure'
-            ],
+    {
+      title: 'Apolo Manillas',
+      subtitle: 'E-commerce Landing Page',
 
-            year: '2026',
+      image: 'projects/apolo-manillas.png',
 
-            status: 'Live',
+      problem:
+        'The client needed an online presence to showcase products, increase sales and facilitate direct communication with customers.',
 
-            demoUrl: 'https://www.apolo-manillas.shop',
+      architecture:
+        'Angular → Responsive UI → WhatsApp Integration → Azure Hosting',
 
-            repoUrl: 'https://github.com/evidenciasponao/apolo-manillas'
-        },
+      technologies: [
+        'Angular',
+        'TypeScript',
+        'CSS3',
+        'Azure'
+      ],
 
-        {
-            title: 'ApoloManillas API',
-            subtitle: 'REST API — .NET Core',
+      year: '2026',
 
-            image: 'projects/apolo-manillas-api.png',
+      status: 'Live',
 
-            problem:
-                'A secure backend service was required to handle authentication, product management, order processing and database operations for the e-commerce platform.',
+      demoUrl: 'https://www.apolo-manillas.shop',
 
-            architecture:
-                'ASP.NET Core → Entity Framework → Azure SQL Server → Azure App Service',
+      repoUrl: 'https://github.com/evidenciasponao/apolo-manillas'
+    },
 
-            technologies: [
-                'ASP.NET Core',
-                'C#',
-                'JWT',
-                'Entity Framework',
-                'Azure SQL',
-                'Azure App Service'
-            ],
 
-            year: '2025',
+    {
+      title: 'ApoloManillas API',
+      subtitle: 'REST API — .NET Core',
 
-            status: 'Live',
+      image: 'projects/apolo-manillas-api.png',
 
-            demoUrl: 'https://www.apolo-manillas.shop',
+      problem:
+        'A secure backend service was required to handle authentication, product management, order processing and database operations for the e-commerce platform.',
 
-            repoUrl: 'https://github.com/evidenciasponao/apolomanillas-api'
-        },
+      architecture:
+        'ASP.NET Core → Entity Framework → Azure SQL Server → Azure App Service',
 
+      technologies: [
+        'ASP.NET Core',
+        'C#',
+        'JWT',
+        'Entity Framework',
+        'Azure SQL',
+        'Azure App Service'
+      ],
 
-        {
-            title: 'NeoRave Web',
-            subtitle: 'Artist Platform',
+      year: '2025',
 
-            image: 'projects/neorave-web.png',
+      status: 'Live',
 
-            problem:
-                'The artist required a centralized platform to promote music, events, visual content and fan support channels from a single website',
+      demoUrl: 'https://www.apolo-manillas.shop',
 
-            architecture:
-                'Angular → SoundCloud API → YouTube API → Azure Hosting',
+      repoUrl: 'https://github.com/evidenciasponao/apolomanillas-api'
+    },
 
-            technologies: [
-                'Angular',
-                'SoundCloud API',
-                'YouTube API',
-                'Ko-fi',
-                'Azure'
-            ],
 
-            year: '2026',
+    {
+      title: 'NeoRave Web',
+      subtitle: 'Artist Platform',
 
-            status: 'Live',
+      image: 'projects/neorave-web.png',
 
-            demoUrl: 'https://www.neorave-web.shop',
+      problem:
+        'The artist required a centralized platform to promote music, events, visual content and fan support channels from a single website.',
 
-            repoUrl: 'https://github.com/evidenciasponao/neorave-web'
-        },
+      architecture:
+        'Angular → SoundCloud API → YouTube API → Azure Hosting',
 
-        {
-            title: 'ADN DEV Cloud',
-            subtitle: 'Professional Portfolio',
+      technologies: [
+        'Angular',
+        'SoundCloud API',
+        'YouTube API',
+        'Ko-fi',
+        'Azure'
+      ],
 
-            image: 'projects/adn-dev.png',
+      year: '2026',
 
-            problem:
-                'A professional platform was needed to showcase projects, technical skills, cloud experience and software development capabilities.',
+      status: 'Live',
 
-            architecture:
-                'Angular → TypeScript → Bootstrap → Azure Static Web Apps',
+      demoUrl: 'https://www.neorave-web.shop',
 
-            technologies: [
-                'Angular',
-                'TypeScript',
-                'Bootstrap',
-                'Azure'
-            ],
+      repoUrl: 'https://github.com/evidenciasponao/neorave-web'
+    },
 
-            year: '2026',
 
-            status: 'Live',
+    {
+      title: 'ADN DEV Cloud',
+      subtitle: 'Professional Portfolio',
 
-            demoUrl: 'https://www.adn-dev.cloud',
+      image: 'projects/adn-dev.png',
 
-            repoUrl: 'https://github.com/evidenciasponao/adn-dev'
-        }
+      problem:
+        'A professional platform was needed to showcase projects, technical skills, cloud experience and software development capabilities.',
 
+      architecture:
+        'Angular → TypeScript → Bootstrap → Azure Static Web Apps',
 
-    ];
+      technologies: [
+        'Angular',
+        'TypeScript',
+        'Bootstrap',
+        'Azure'
+      ],
+
+      year: '2026',
+
+      status: 'Live',
+
+      demoUrl: 'https://www.adn-dev.cloud',
+
+      repoUrl: 'https://github.com/evidenciasponao/adn-dev'
+    }
+
+  ];
 
 }
